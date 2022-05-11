@@ -1,9 +1,0 @@
-#!/bin/sh
-
-echo "Starting Hello World..."
-sleep 10
-
-while :;do
-  echo "Hello world!"
-  sleep 10
-done

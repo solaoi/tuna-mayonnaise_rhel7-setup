@@ -1,13 +1,14 @@
 [Unit]
-Description = Hello world daemon
+Description = TUNA-Mayonnaise daemon
 
 [Service]
-ExecStart = /usr/bin/hello_world
+WorkingDirectory = /etc/tuna.d
+ExecStart = /usr/bin/tuna api
 ExecStop = /usr/bin/kill -p $MAINPID
 Restart = always
 StandardOutput = syslog
 StandardError = syslog
-SyslogIdentifier = hello_world
+SyslogIdentifier = tuna
 
 [Install]
 WantedBy = multi-user.target
